@@ -22,6 +22,7 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHol
 
     private List<ClipData.Item>itemList;
 
+
     public ImageAdapter(Context context, List<ClipData.Item>itemList){
         this.itemList=itemList;
     }
@@ -39,14 +40,14 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHol
 
         ClipData.Item descripcion= itemList.get(position);
         holder.textView.setText(descripcion.getText().toString());
-        //como pongo la imagen? con glide??
-        //holder.imageView= Glide.with(this).load()
-        //holder.imageView.setImageResource(position);
-       //
+        //Se carga bien la imagen
+        Glide.with(holder.imageView).load(descripcion.getHtmlText()).into(holder.imageView);
+
+       //TODO ordenar el layout se ve muy grande y el textview muy chico
 
 
 
-        //al menos funciona, voy a seguir la clase
+        //al menos funciona
         //TODO: que es clipdata?
 
 
