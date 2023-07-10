@@ -72,3 +72,4 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHol
     }
 
 }
+//TODO enviar imagen y texto del primer al segundo fragmento y setearlos en los correspondientes contenedores;
