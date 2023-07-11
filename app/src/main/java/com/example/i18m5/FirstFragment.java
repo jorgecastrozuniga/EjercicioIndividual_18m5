@@ -25,11 +25,11 @@ public class FirstFragment extends Fragment {
         List<ClipData.Item> listItem = new ArrayList<>();
         ClipData.Item item01 = new ClipData.Item("Zhuo Cheng you", "https://unsplash.com/photos/UBvtBr_FmrY/download?force=true&w=6 40");
         listItem.add(item01);
-        ClipData.Item item02 = new ClipData.Item("billow926", "https://unsplash.com/photos/pNoP- qVwBFQ/download?force=true&w=640");
+        ClipData.Item item02 = new ClipData.Item("billow926", "https://unsplash.com/photos/pNoP-qVwBFQ/download?force=true&w=640");
         listItem.add(item02);
         ClipData.Item item03 = new ClipData.Item("Philipp Deiß", "https://unsplash.com/photos/LfJx0gqqiEc/download?force=true&w=64 0");
         listItem.add(item03);
-        ClipData.Item item04 = new ClipData.Item("Huper by Joshua Earle", "https://unsplash.com/photos/_p8gVNNsWw4/download?force=true& w=640");
+        ClipData.Item item04 = new ClipData.Item("Huper by Joshua Earle", "https://unsplash.com/photos/_p8gVNNsWw4/download?force=true&w=640");
         listItem.add(item04);
         ClipData.Item item05 = new ClipData.Item("Melnychuk Nataliya", "https://unsplash.com/photos/rnPGCe7LsQo/download?force=true &w=640");
         listItem.add(item05);
@@ -37,7 +37,7 @@ public class FirstFragment extends Fragment {
         listItem.add(item06);
         ClipData.Item item07 = new ClipData.Item("Chen Liu", "https://unsplash.com/photos/kZH8X0q4Nvo/download?force=true&w=6 40");
         listItem.add(item07);
-        ClipData.Item item08 = new ClipData.Item("John Fornander", "https://unsplash.com/photos/iNqJx- VOceI/download?force=true&w=640");
+        ClipData.Item item08 = new ClipData.Item("John Fornander", "https://unsplash.com/photos/iNqJx-VOceI/download?force=true&w=640");
         listItem.add(item08);
         ClipData.Item item09 = new ClipData.Item("ParkerCoffman", "https://unsplash.com/photos/mNWrQ9O6KZw/download?force=tr ue&w=640");
         listItem.add(item09);
@@ -45,7 +45,7 @@ public class FirstFragment extends Fragment {
         listItem.add(item10);
         ClipData.Item item11 = new ClipData.Item("Daniel J. Schwarz", "https://unsplash.com/photos/l8BvDmt8Ac4/download?force=true& w=640");
         listItem.add(item11);
-        ClipData.Item item12 = new ClipData.Item("Wesley Armstrong", "https://unsplash.com/photos/q0wqYpyWDpc/download?force=tr ue&w=640");
+        ClipData.Item item12 = new ClipData.Item("Wesley Armstrong", "https://unsplash.com/photos/q0wqYpyWDpc/download?force=true&w=640");
         listItem.add(item12);
         return listItem;
     }
