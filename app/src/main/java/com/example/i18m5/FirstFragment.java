@@ -19,7 +19,7 @@ import java.util.List;
 
 public class FirstFragment extends Fragment {
 
-    private FragmentFirstBinding binding;
+    private FragmentFirstBinding abinding;
 
     private List<ClipData.Item> returnItemList() {
         List<ClipData.Item> listItem = new ArrayList<>();
@@ -56,8 +56,8 @@ public class FirstFragment extends Fragment {
             Bundle savedInstanceState
     ) {
 
-        binding = FragmentFirstBinding.inflate(inflater, container, false);
-        return binding.getRoot();
+        abinding = FragmentFirstBinding.inflate(inflater, container, false);
+        return abinding.getRoot();
 
     }
 
@@ -65,11 +65,11 @@ public class FirstFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         ImageAdapter adapter=new ImageAdapter(getContext(),returnItemList());
-        binding.recyclerview1.setAdapter(adapter);
-        binding.recyclerview1.setLayoutManager(new LinearLayoutManager(getContext()));
-        binding.recyclerview1.setHasFixedSize(true);
+        abinding.recyclerview1.setAdapter(adapter);
+        abinding.recyclerview1.setLayoutManager(new LinearLayoutManager(getContext()));
+        abinding.recyclerview1.setHasFixedSize(true);
 
-        binding.buttonFirst.setOnClickListener(new View.OnClickListener() {
+        abinding.buttonFirst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(FirstFragment.this)
@@ -81,7 +81,7 @@ public class FirstFragment extends Fragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        binding = null;
+        abinding = null;
     }
 
 }

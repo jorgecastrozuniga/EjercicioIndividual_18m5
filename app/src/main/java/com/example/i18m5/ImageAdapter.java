@@ -42,15 +42,6 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHol
         holder.textView.setText(descripcion.getText().toString());
         //Se carga bien la imagen
         Glide.with(holder.imageView).load(descripcion.getHtmlText()).into(holder.imageView);
-
-       //TODO ordenar el layout se ve muy grande y el textview muy chico
-
-
-
-        //al menos funciona
-        //TODO: que es clipdata?
-
-
     }
 
     @Override
@@ -70,6 +61,4 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHol
             textView=binding.textView;
         }
     }
-
 }
-//TODO enviar imagen y texto del primer al segundo fragmento y setearlos en los correspondientes contenedores;
